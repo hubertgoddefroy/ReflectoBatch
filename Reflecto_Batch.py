@@ -163,8 +163,8 @@ def reconstructions(chemin_variation_param, chemin_instal_Zyminterne, chemin_dos
     except:
         messagebox.showerror("Erreur", "fichier variation_parametres.xlsx non trouvé\nou mauvais format")
     param_xlsx_np = np.array(param_xlsx)
-    if not (param_xlsx_np[0, 0] == 'mx' and param_xlsx_np[19, 0] == 'tmax' and param_xlsx_np[
-        21, 0] == 'MinThickness' and param_xlsx_np[25, 0] == 'ThicknessDefinition' and len(param_xlsx_np[:, 0] == 26)):
+    if not (param_xlsx_np[0, 0] == 'mx' and param_xlsx_np[20, 0] == 'weight' and param_xlsx_np[
+        22, 0] == 'MinThickness' and param_xlsx_np[26, 0] == 'ThicknessDefinition' and len(param_xlsx_np[:, 0] == 27)):
         messagebox.showerror("Erreur", "fichier variation_parametres.xlsx au mauvais format")
     nb_variation_max = np.shape(param_xlsx_np)
     variation = False
@@ -217,7 +217,7 @@ def reconstructions(chemin_variation_param, chemin_instal_Zyminterne, chemin_dos
         pe = ['post']
     elif if_EXPO and not if_POST:
         nb_reconstruction = compteur * len(liste_acquisitions)
-        pe = ['expo']
+        pe = ['expo_ZC19']
     else:
         print('Veuillez sélectionner les imageries POST et/ou EXPO')
         messagebox.showerror("Erreur", "Veuillez sélectionner les imageries POST et/ou EXPO")

@@ -214,7 +214,7 @@ def reconstructions(chemin_variation_param, chemin_instal_Zyminterne, chemin_dos
         pe = ['post', 'expo']
     elif if_POST and not if_EXPO:
         nb_reconstruction = compteur * len(liste_acquisitions)
-        pe = ['post']
+        pe = ['post_ZC21']
     elif if_EXPO and not if_POST:
         nb_reconstruction = compteur * len(liste_acquisitions)
         pe = ['expo_ZC19']

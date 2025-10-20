@@ -12,17 +12,17 @@ import time
 import threading
 
 parametres_reflecto = ['mx', 'my', 'mw', 'mh', 'sx', 'sy', 'flt', 'fltsz', 'ist', 'inr4', 'ixr4', 'inr7', 'ixr7',
-                       'imaxrjt', 'n4', 'n7', 'n04', 'n07', 'a', 'tmax']
+                       'imaxrjt', 'n4', 'n7', 'n04', 'n07', 'a', 'tmax','weight']
 parametres_stat = ['MinThickness', 'MaxThickness', 'ThicknessBinSize', 'MinThicknessFrequency', 'ThicknessDefinition']
 
 parametres_int = ['mx', 'my', 'sx', 'sy', 'flt', 'fltsz', 'ist', 'inr4', 'ixr4', 'inr7', 'ixr7', 'ThicknessBinSize',
                   'MinThicknessFrequency']
-parametres_float = ['mw', 'mh', 'imaxrjt', 'n4', 'n7', 'n04', 'n07', 'a', 'tmax', 'MinThickness', 'MaxThickness']
+parametres_float = ['mw', 'mh', 'imaxrjt', 'n4', 'n7', 'n04', 'n07', 'a', 'tmax','weight', 'MinThickness', 'MaxThickness']
 parametres_str = ['inv', 'VolumeDefinition', 'DiameterDefinition', 'ThicknessDefinition']
 
 # chemin_complet = r'C:\Users\Public\Zymoptiq\ZymoSoft_V2.1.3\bin\Zyminterne.exe -i E:\GPAxHA221207-07\Images -f "G:\Mon Drive\Litteral\routine_Interf_batch\resultats_test" -o "G:\Mon Drive\Litteral\routine_Interf_batch\resultats_test\resultats_ZI" -s "G:\Mon Drive\Litteral\routine_Interf_batch\Analysis.ini" -730 -r "G:\Mon Drive\Litteral\routine_Interf_batch\AX_20x_downscaled.txt" -d true'
 
-chemin_instal_Zyminterne = r'C:\\Users\\Public\\Zymoptiq\\ZymoSoft_V3.0.0b5\\bin'
+chemin_instal_Zyminterne = r'C:\\Users\\Public\\Zymoptiq\\ZymoSoft_V3.1.1\\bin'
 # def longueur_onde_455_730():
 #     longueur_onde = ''
 #     if case_455.get() and not case_730.get():
